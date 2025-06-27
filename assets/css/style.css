@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+
+}
+
+/* root elements color */
+:root {
+    --main-color: #e21b70;
+    --font-color: #fffbfb;
+    --hover-effect: #ece7e7;
+}
+
+body {
+    height: 200vh;
+}
+
+
+/* ========== for header ========== */
+/* head area CSS */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.head-container {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    background-color: var(--main-color);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.head-container img {
+    height: 3rem;
+    width: 3rem;
+    filter: invert(100%);
+}
+
+.head-container p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--font-color);
+}
+
+.head-container button {
+    padding: .75rem 1.25rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--font-color);
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.head-container button:hover {
+    color: black;
+    background-color: var(--font-color);
+    transition: all .5s ease-in-out;
+}
+
+/* =========== for Navbar ============= */
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+    background-color: var(--font-color);
+    padding: 0 6rem;
+    box-shadow: 4px 6px 20px #afafaf76;
+
+
+}
+
+.nav .logo-img img {
+    height: 7rem;
+    width: 10rem;
+}
+
+/* navbar button area */
+.nav .nav-btn-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .nav-btn-area button {
+    padding: .5rem 1rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin: 0 .5rem;
+    cursor: pointer;
+}
+
+#login-btn {
+    background: none;
+    border: 1px black solid;
+}
+
+#login-btn:hover,
+#sign-up-btn:hover {
+    padding: .75rem 1.25rem;
+    transition: all .2s ease-in;
+}
+
+#sign-up-btn {
+    background: var(--main-color);
+    color: var(--font-color);
+}
+
+
+.nav-btn-area .nav-bag {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: .5rem;
+
+}
+
+.nav-btn-area .nav-bag:hover {
+    background: var(--hover-effect);
+}
+
+/* for navbar dropdown */
+.nav .language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 2rem;
+    width: 5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.nav .language:hover {
+    background: var(--hover-effect);
+}
+
+.language .down-arrow {
+    color: var(--main-color);
+}
+
+/* ========== Banner Area CSS ============= */
+.banner-container {
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Banner Content Area */
+.ban-cont-area h1 {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    color: #262626;
+}
+
+.banner-img img {
+    height: 25rem;
+    width: 35rem;
+    animation: banner-img 4s infinite;
+}
+
+@keyframes banner-img{
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(50px);
+    }
+    50%{
+        transform: translateY(100px);
+    }
+    75%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* Banner Input Area */
+.ban-input-area {
+    height: 4.5rem;
+    width: 85%;
+    border-radius: 1rem;
+    /* border: 2px solid rebeccapurple; */
+    box-shadow: 10px 10px 20px #afafafc2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ban-input-area .input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #afafafc2;
+    border-radius: 4px;
+    padding: 0 .5rem;
+    width: 80%;
+
+}
+
+.ban-input-area .input input {
+    width: 60%;
+    height: 2.5rem;
+    border: none;
+}
+
+.ban-input-area .input a {
+    color: #262626;
+    text-decoration: none;
+    transition: all .3s ease-in;
+}
+
+.ban-input-area .input a:hover {
+    color: var(--main-color);
+}
+
+.ban-input-area .input i {
+    color: var(--main-color);
+    padding-right: .5rem;
+    font-size: 1.25rem;
+
+}
+
+.ban-cont-area button {
+    height: 2.5rem;
+    width: 5rem;
+    border: none;
+    background: var(--main-color);
+    color: var(--font-color);
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.ban-cont-area button:hover {
+    height: 3rem;
+    width: 5.5rem;
+}
+
+/* =========== CSS for Info =========== */
+.info-container h1 {
+    margin: 0 0 3rem 3rem;
+    font-size: 3rem;
+}
+
+.info-container .info-banner-img {
+    height: 30rem;
+    width: 100%;
+    background: url(../images/content-info.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.info-container .info-content {
+    height: 20rem;
+    width: 38rem;
+    /* background: var(--font-color);    */
+    /* border: 2px solid red; */
+    background: var(--font-color);
+    position: relative;
+    bottom: 10rem;
+    left: 6rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 4px 6px 20px #afafaf76;
+}
+
+.info-container .info-content h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.info-container .info-content p {
+    text-align: justify;
+    line-height: 2rem;
+    font-size: 1.20rem;
+}
+
+.info-container .info-content button {
+    padding: .5rem 1rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin: 0 .5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    background: var(--main-color);
+    color: var(--font-color);
+    transition: all .3s ease-in;
+}
+
+.info-container .info-content button:hover {
+    padding: .75rem 1.25rem;
+}
+
+/* =========== Cards Section ========= */
+.cards-section h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    
+}
+
+.cards-container .card {
+    height: 20rem;
+    width: 20rem;
+
+}
+
+.cards-container .card-img img {
+    border-radius: 2rem;
+    height: 20rem;
+    width: 20rem;
+}
+
+
+.card-img button {
+    position: relative;
+    left: 2rem;
+    bottom: 4rem;
+    z-index: 1;
+    border: 2px solid red;
+
+}
+
+/* media Querry here */
+@media screen and  (max-width:800) {
+    .head-container p{
+        font-size: .25rem;
+    }
+}
