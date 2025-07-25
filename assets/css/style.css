@@ -388,8 +388,52 @@ header {
     background-color: var(--main-color);
     border-radius: 1.5rem;
     margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.down-container .down-content h2 {
-    margin: 3rem 0 3rem 2rem;
+.down-content {
+    position: absolute;
 }
+.down-content h2 {
+    margin: 3rem 0 3rem 2rem;
+    font-size: 2rem;
+    color: var(--font-color);
+    font-weight: 400;
+}
+
+
+
+.down-detail{
+    display: flex;
+}
+
+.down-qr img{
+    height: 6rem;
+    width: 6rem;
+}
+
+
+
+.down-link-img{
+    display: flex;
+}
+
+.down-link-img a img{
+    height: 8rem;
+    width: 8rem;
+}
+
+
+.down-img img{
+    height: 35rem;
+    width: 40rem;
+}
+
+
+
+
+
+
+
