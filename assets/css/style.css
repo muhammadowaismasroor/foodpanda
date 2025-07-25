@@ -322,52 +322,74 @@ header {
 
 /* =========== Cards Section ========= */
 .cards-section h1 {
-  margin: 2rem 2rem;
-  font-size: 2.5rem;
+    margin: 2rem 2rem;
+    font-size: 2.5rem;
 }
 
 .cards-container {
-  margin: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 .cards-container .card {
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .cards-container .card .card-img {
-  width: 100%;
-  height: 230px;
-  overflow: hidden;
-  cursor: pointer;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .cards-container .card-img img {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: transform 0.3s ease;
 }
 
 .cards-container .card-img img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .card-img button {
-  position: relative;
-  left: 2rem;
-  bottom: 4rem;
-  padding: 1rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
+    position: relative;
+    left: 2rem;
+    bottom: 4rem;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* =======Download Section Area ========== */
+.download-sec {
+    margin: 3rem;
+}
+
+.download-sec h1 {
+    font-size: 3rem;
+}
+
+.down-container {
+    height: 25rem;
+    width: 100%;
+    background-color: var(--main-color);
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+}
+
+.down-container .down-content h2 {
+    margin: 3rem 0 3rem 2rem;
 }
